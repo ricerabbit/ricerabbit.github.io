@@ -1,0 +1,28 @@
+.img0{
+	
+	border-top:0.5px solid #002983;
+	border-bottom: 0.5px solid #002983;
+
+}
+
+
+.inner{
+	position: relative
+}
+
+
+.imgtop{
+	text-align: center;
+}
+	
+.img1{
+	text-align: center;
+	opacity: 0;
+}
+
+.img1 img{
+	width: 70%;
+}
+
+
+
