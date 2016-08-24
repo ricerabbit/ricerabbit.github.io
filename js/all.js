@@ -37,6 +37,27 @@ $(document).ready(function() {
 
   }
 
+
+  slideshow();
+  var a=0;
+  function slideshow() {
+        var li = $('#ui_slide li'),
+          num = li.length,
+          time = 2000,
+          chgtime = 800;
+        if (a >= num - 1) {
+            li.eq(a).fadeOut(chgtime);
+            li.eq(0).fadeIn(chgtime);
+            a = 0;
+        } else {
+            li.eq(a).fadeOut(chgtime);
+            li.eq(a + 1).fadeIn(chgtime);
+            a = a + 1;
+        }
+        setTimeout(slideshow, time);
+    };
+
+
   //lightbox
   lightbox.option({
       'resizeduration':1000,
